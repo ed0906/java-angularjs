@@ -1,0 +1,21 @@
+<nav class="navbar k-header vertical-center" ng-controller="HeaderController as ctrl">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/#/">Brand</a>
+            <button type="button" class="navbar-toggle" ng-click="ctrl.show = !ctrl.show;">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+
+        <div class="navbar-collapse" ng-class="{'collapse': !ctrl.show}">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/#/">Nav 1</a>
+                </li>
+                <li>
+                    <a href="/#/">Nav 2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

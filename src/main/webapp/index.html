@@ -1,0 +1,40 @@
+<html ng-app="app">
+<head>
+    <title>App name</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!--JavaScript Libraries/Components-->
+    <script src="components/angular/angular.min.js"></script>
+    <script src="components/angular-route/angular-route.min.js"></script>
+
+    <!--CSS Libraries/Components-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel='stylesheet' href="lib/reset.css" type='text/css'>
+    <link rel='stylesheet' href="lib/fonts.css" type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Local Styles-->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- endinject -->
+
+    <!--App-->
+    <script src="js/app/App.js"></script>
+    <!-- inject:js -->
+    <script src="js/app/AppController.js"></script>
+    <script src="js/footer/FooterController.js"></script>
+    <script src="js/footer/FooterDirective.js"></script>
+    <script src="js/header/HeaderController.js"></script>
+    <script src="js/header/HeaderDirective.js"></script>
+    <script src="js/home/HomeController.js"></script>
+    <script src="js/location/LocationService.js"></script>
+    <script src="js/storage/LocalStorageService.js"></script>
+    <!-- endinject -->
+</head>
+<body ng-controller="AppController as ctrl">
+    <header></header>
+    <div class="k-body" ng-view></div>
+    <footer></footer>
+</body>
+</html>

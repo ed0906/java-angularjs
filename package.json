@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-skeleton",
+  "version": "1.0.0",
+  "description": "Description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/main/webapp/index.js",
+    "stop": "pkill --signal SIGINT appnamge",
+    "postinstall": "./node_modules/bower/bin/bower install"
+  },
+  "dependencies": {
+    "bower": "^1.7.7",
+    "ejs": "2.3.3",
+    "express": "4.13.3"
+  },
+  "engines": {
+    "node": "4.1.1"
+  },
+  "author": "edward.wilson",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-inject": "^3.0.0",
+    "gulp-sass": "^2.2.0"
+  }
+}
