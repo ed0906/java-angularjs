@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/main/webapp/index.js",
+    "start": "./gradlew run",
     "stop": "pkill --signal SIGINT appnamge",
     "postinstall": "./node_modules/bower/bin/bower install"
   },
